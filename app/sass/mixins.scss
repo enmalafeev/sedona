@@ -1,0 +1,61 @@
+@mixin fontsource($ff:false, $size: false, $weight: false, $colour: false, $lh: false) {
+  @if $ff {
+    font-family: $ff,
+    Helvetica,
+    Arial,
+    sans-serif;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    width: 648px;
+  }
+
+  @media #{$desktop-width} {
+    width: 1200px;
+  }
+}
+
+@mixin margin-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// madia-queries
+$breakpoints: ( "phone" : 400px, "phone-wide" : 480px, "phablet" : 560px, "tablet-small": 640px, "tablet" : 768px, "tablet-wide" : 1024px, "desktop" : 1248px, "desktop-wide": 1440px);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
