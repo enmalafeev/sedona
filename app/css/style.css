@@ -40,7 +40,8 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: white;
   line-height: 40px;
-  background-color: #81b3d2; }
+  background-color: #81b3d2;
+  width: auto; }
 
 .main-menu__list {
   display: -webkit-box;
@@ -75,16 +76,18 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8; }
 
-.main-menu__link:focus,
-.main-menu__link:hover {
+.main-menu__link:focus:not(:last-child),
+.main-menu__link:hover:not(:last-child) {
   background-color: #669ec0; }
 
-.main-menu__link:active {
+.main-menu__link:active:not(:last-child) {
   background-color: #5496bd;
-  color: opacity(0.3); }
+  color: #91b7d1; }
 
 .logo {
-  background-color: #fff; }
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 2; }
 
 .main-menu__open,
 .main-menu__close {
@@ -141,6 +144,23 @@ input[type="radio"].visually-hidden {
   color: black;
   line-height: 26px; }
 
+.welcome-screen {
+  position: relative;
+  height: 389px;
+  background-color: #81b3d2;
+  background: url("../img/bg-mobile.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.welcome-screen::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../img/text-index.png") no-repeat center; }
+
 @font-face {
   font-family: 'ptsans';
   src: url("../fonts/ptsans.woff") format("woff");
@@ -157,9 +177,12 @@ input[type="radio"].visually-hidden {
 
 @media screen and (min-width: 768px) {
   .main-menu {
-    width: auto;
     background-color: #fff; }
   .main-menu__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -173,9 +196,18 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: none;
             box-shadow: none; }
   .main-menu__link {
-    color: #000; }
-  .logo {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3; } }
+    color: #000;
+    border: none; }
+  .main-menu__link:hover,
+  .main-menu__link:focus {
+    color: #81b3d2; }
+  .main-menu__link:active {
+    color: #cacaca; }
+  .main-menu__open,
+  .main-menu__close {
+    display: none; }
+  .main-menu__item:nth-child(n+3):not(.logo) {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; } }
