@@ -1,8 +1,70 @@
+.advantages {
+  background-color: #fff; }
+
+.advantages__title {
+  width: 255px;
+  margin: 0 auto;
+  font-family: "ptsansbold", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 35px; }
+  .advantages__title--black {
+    color: #000; }
+
+.advantages__desc {
+  width: 255px;
+  margin: 0 auto;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 45px; }
+  .advantages__desc--black {
+    color: #000; }
+
+.advantages__number {
+  display: block;
+  text-align: center;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #fff; }
+
+.advantages__first-item {
+  background-color: #81b3d2;
+  color: #fff;
+  position: relative;
+  padding-top: 70px; }
+  .advantages__first-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 37px;
+    top: 0;
+    left: 0;
+    background: url("../img/triangle.png") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+.advantages__first-item img {
+  display: block;
+  margin: 0 auto;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 .page-body {
   font-family: "ptsans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  color: white;
+  line-height: white;
   background-color: #fff; }
 
 html {
@@ -38,9 +100,9 @@ input[type="radio"].visually-hidden {
   font-family: "ptsansbold", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: white;
   line-height: 40px;
   background-color: #81b3d2;
+  color: #fff;
   width: auto; }
 
 .main-menu__list {
@@ -141,8 +203,8 @@ input[type="radio"].visually-hidden {
   font-family: "ptsans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  color: black;
-  line-height: 26px; }
+  line-height: 26px;
+  color: #000; }
 
 .welcome-screen {
   position: relative;
@@ -150,16 +212,23 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   background: url("../img/bg-mobile.jpg") no-repeat center;
   -webkit-background-size: cover;
-          background-size: cover; }
-
-.welcome-screen::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url("../img/text-index.png") no-repeat center; }
+          background-size: cover;
+  margin-bottom: 40px; }
+  .welcome-screen::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../img/text-index.png") no-repeat center; }
+  .welcome-screen::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+    background: url("../img/intro-triangle.png") no-repeat center; }
 
 @font-face {
   font-family: 'ptsans';

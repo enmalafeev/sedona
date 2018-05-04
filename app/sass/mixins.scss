@@ -1,4 +1,4 @@
-@mixin fontsource($ff:false, $size: false, $weight: false, $colour: false, $lh: false) {
+@mixin fontsource($ff:false, $size: false, $weight: false, $lh: false) {
   @if $ff {
     font-family: $ff,
     Helvetica,
@@ -11,9 +11,6 @@
   }
   @if $weight {
     font-weight: $weight;
-  }
-  @if $colour {
-    color: $colour;
   }
   @if $lh {
     line-height: $lh;

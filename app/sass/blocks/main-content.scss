@@ -1,3 +1,4 @@
 .main-content {
-  @include fontsource('ptsans', 14px, normal, black, 26px);
+  @include fontsource('ptsans', 14px, normal, 26px);
+  color: #000;
 }

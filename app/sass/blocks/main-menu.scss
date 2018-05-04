@@ -1,6 +1,7 @@
 .main-menu {
-  @include fontsource('ptsansbold', 18px, bold, white, 40px);
+  @include fontsource('ptsansbold', 18px, bold, 40px);
   background-color: #81b3d2;
+  color: #fff;
   width: auto;
 }
 

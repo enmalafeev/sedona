@@ -1,0 +1,71 @@
+.advantages {
+  background-color: #fff;
+  // color: #000;
+}
+
+.advantages__title {
+  width: 255px;
+  margin: 0 auto;
+
+  @include fontsource('ptsansbold', 18px, bold, 26px);
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+
+  margin-bottom: 35px;
+
+  &--black {
+    color: #000;
+  }
+}
+
+.advantages__desc {
+  width: 255px;
+  margin: 0 auto;
+
+  @include fontsource('ptsans', 14px, normal, 26px);
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+
+  margin-bottom: 45px;
+
+  &--black {
+    color: #000;
+  }
+}
+
+.advantages__number {
+  display: block;
+  text-align: center;
+  @include fontsource('ptsans', 14px, normal, 21px);
+  color: #fff;
+}
+
+.advantages__first-item {
+  background-color: $blue;
+  color: #fff;
+  position: relative;
+
+  padding-top: 70px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 37px;
+    top: 0;
+    left: 0;
+    background: url("../img/triangle.png") no-repeat center;
+    background-size: cover;
+  }
+
+}
+
+.advantages__first-item img {
+  display: block;
+  margin: 0 auto;
+  background-size: cover;
+}
