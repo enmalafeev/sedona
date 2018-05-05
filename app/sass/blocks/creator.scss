@@ -1,0 +1,19 @@
+.creator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.creator__text {
+  @include fontsource('ptsans', 18px, normal, 26px);
+  color: #000;
+  text-transform: uppercase;
+}
+
+.creator__link {
+  background: url("../img/htmlacademy.png") no-repeat center;
+  width: 27px;
+  height: 34px;
+}

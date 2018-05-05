@@ -1,0 +1,14 @@
+.page-footer {
+  @include container;
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 25px;
+}
+
+.hashtag {
+  @include fontsource('ptsansbold', 21px, bold, 26px);
+  text-transform: uppercase;
+  color: #000;
+
+  margin-bottom: 40px;
+}
