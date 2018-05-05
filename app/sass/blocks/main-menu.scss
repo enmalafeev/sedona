@@ -153,5 +153,10 @@
   .main-menu__item:nth-child(n+3):not(.logo) {
     order: 1;
   }
+}
 
+@media #{$desktop-width} {
+  .main-menu {
+    @include container;
+  }
 }

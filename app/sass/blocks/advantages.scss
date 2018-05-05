@@ -13,10 +13,11 @@
 
   color: #fff;
 
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 
   &--black {
     color: #000;
+    margin-bottom: 35px;
   }
 }
 
@@ -42,6 +43,11 @@
   text-align: center;
   @include fontsource('ptsans', 14px, normal, 21px);
   color: #fff;
+
+  &--black {
+    color: #000;
+    padding-bottom: 20px;
+  }
 }
 
 .advantages__first-item {
@@ -64,8 +70,25 @@
 
 }
 
-.advantages__first-item img {
+.advantages__first-item img,
+.advantages__second-item img {
   display: block;
   margin: 0 auto;
   background-size: cover;
+}
+
+.advantages__second-item {
+  background-color: $blue;
+  color: #fff;
+
+  padding-top: 40px;
+}
+
+.advantages__third-item {
+  width: auto;
+  margin: 0 auto;
+
+  text-align: center;
+  background-color: #eeeeee;
+  color: #000;
 }

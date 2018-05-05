@@ -30,6 +30,16 @@
   }
 }
 
+@mixin container-fluid {
+  width: auto;
+
+  @media #{$tablet-width} {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
 @mixin margin-auto {
   margin: {
     left: auto;
