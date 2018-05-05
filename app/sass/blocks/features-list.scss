@@ -7,6 +7,7 @@
   margin: 0;
 
   list-style: none;
+  @include container;
 }
 
 .features-list__item {

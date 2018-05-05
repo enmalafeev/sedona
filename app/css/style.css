@@ -84,7 +84,9 @@
 .features-list {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  width: 320px;
+  margin: 0 auto; }
 
 .features-list__item {
   width: 280px;
@@ -303,6 +305,31 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #000; }
 
+.search-hotel {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+.search-hotel__title {
+  font-family: "ptsansbold", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px; }
+
+.search-hotel__desc {
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 38px; }
+
 .welcome-screen {
   position: relative;
   height: 389px;
@@ -327,6 +354,17 @@ input[type="radio"].visually-hidden {
     bottom: 0;
     background: url("../img/intro-triangle.png") no-repeat center; }
 
+.btn {
+  font-family: "ptsansbold", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 47px; }
+
 @font-face {
   font-family: 'ptsans';
   src: url("../fonts/ptsans.woff") format("woff");
@@ -343,6 +381,8 @@ input[type="radio"].visually-hidden {
 
 @media screen and (min-width: 768px) {
     .features-wrapper {
+      width: 768px; }
+    .features-list {
       width: 768px; }
   .main-menu {
     background-color: #fff; }
@@ -378,14 +418,20 @@ input[type="radio"].visually-hidden {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
-            order: 1; } }
+            order: 1; }
+    .search-hotel {
+      width: 768px; } }
 
 @media screen and (min-width: 1200px) {
     .features-wrapper {
       width: 1200px; }
+    .features-list {
+      width: 1200px; }
   .main-menu {
     width: 320px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .search-hotel {
+      width: 1200px; } }
 
 @media screen and (min-width: 1200px) and (min-width: 768px) {
     .main-menu {

@@ -1,0 +1,9 @@
+.btn {
+  @include fontsource('ptsansbold', 21px, bold, 26px);
+  text-transform: uppercase;
+  background-color: $blue;
+  color: #fff;
+
+  text-decoration: none;
+  padding: 15px 47px;
+}
