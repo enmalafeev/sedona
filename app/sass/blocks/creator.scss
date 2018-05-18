@@ -17,3 +17,18 @@
   width: 27px;
   height: 34px;
 }
+
+.creator__link:hover,
+.creator__link:focus {
+  background: url("../img/html-blue.png") no-repeat center;
+}
+
+.creator__link:active {
+  filter: invert(50%);
+}
+
+@media #{$tablet-width} {
+  .creator {
+    margin: 0;
+  }
+}

@@ -1,3 +1,33 @@
 .map {
   @include container;
+  position: relative;
+
+  width: 320px;
+  height: 350px;
+  background: url("../img/map-mobile.jpg") no-repeat center;
+  background-size: cover;
 }
+
+@media #{$tablet-width} {
+  .map {
+    background: url("../img/map-tablet.jpg") no-repeat center;
+  }
+
+  .map iframe {
+    width: 768px;
+    height: 350px;
+  }
+}
+
+// .map::before {
+//   position: absolute;
+//   content: "";
+
+//   width: 27px;
+//   height: 27px;
+
+//   top: 45%;
+//   left: 46%;
+
+//   background: url("../img/map-marker.png") no-repeat center;
+// }

@@ -1,11 +1,12 @@
 .advantages {
+  @include container;
   background-color: #fff;
-  // color: #000;
 }
 
 .advantages__title {
-  width: 255px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @include fontsource('ptsansbold', 18px, bold, 26px);
   text-transform: uppercase;
@@ -22,8 +23,9 @@
 }
 
 .advantages__desc {
-  width: 255px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @include fontsource('ptsans', 14px, normal, 26px);
   text-transform: uppercase;
@@ -65,7 +67,6 @@
     top: 0;
     left: 0;
     background: url("../img/triangle.png") no-repeat center;
-    background-size: cover;
   }
 
 }
@@ -91,4 +92,62 @@
   text-align: center;
   background-color: #eeeeee;
   color: #000;
+}
+
+@media #{$tablet-width} {
+  .advantages__title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantages__title--black {
+    padding-left: 166px;
+    padding-right: 166px;
+  }
+
+  .advantages__desc {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .advantages__first-item,
+  .advantages__second-item {
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 0;
+  }
+
+  .advantages__first-item p,
+  .advantages__second-item p {
+    margin: 0;
+  }
+
+  .advantages-wrap {
+    flex-basis: 33.33%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 40px;
+  }
+
+  .advantages__number--mb25 {
+    margin-bottom: 25px;
+  }
+
+
+  .picture-wrap {
+    flex-basis: 66.66%;
+    flex-grow: 1;
+  }
+
+  .advantages__first-item::after {
+    background-image: none;
+  }
+
+  .advantages__second-item .picture-wrap {
+    order: -1;
+  }
+
 }

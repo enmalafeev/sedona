@@ -21,3 +21,13 @@
   margin: 0;
   margin-bottom: 38px;
 }
+
+@media #{$tablet-width} {
+  .search-hotel {
+    padding-top: 55px;
+  }
+
+  .search-hotel__title {
+    font-size: 30px;
+  }
+}

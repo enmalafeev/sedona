@@ -7,3 +7,24 @@
   text-decoration: none;
   padding: 15px 47px;
 }
+
+.btn:hover,
+.bth:focus {
+  background-color: #669ec0;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.btn:disabled {
+  background-color: #e5e5e5;
+}
+
+@media #{$tablet-width} {
+  .btn {
+    width: 458px;
+  }
+}
