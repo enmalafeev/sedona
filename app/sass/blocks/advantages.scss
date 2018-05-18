@@ -151,3 +151,23 @@
   }
 
 }
+
+@media #{$desktop-width} {
+  .advantages-wrap {
+    padding-top: 52px;
+  }
+
+  .advantages__title {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .advantages__title--black {
+    padding-left: 340px;
+    padding-right: 340px;
+  }
+
+  .advantages__second-item .advantages__desc {
+    padding: 0 85px;
+  }
+}

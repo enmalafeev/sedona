@@ -665,7 +665,7 @@ input[type="radio"].visually-hidden {
     height: 350px; }
     .page-footer {
       width: 84%;
-      max-width: 960px;
+      max-width: 1050px;
       margin: 0 auto; }
   .page-footer {
     display: -webkit-box;
@@ -701,15 +701,37 @@ input[type="radio"].visually-hidden {
 @media screen and (min-width: 1200px) {
     .advantages {
       width: 1200px; }
+  .advantages-wrap {
+    padding-top: 52px; }
+  .advantages__title {
+    padding-left: 110px;
+    padding-right: 110px; }
+  .advantages__title--black {
+    padding-left: 340px;
+    padding-right: 340px; }
+  .advantages__second-item .advantages__desc {
+    padding: 0 85px; }
     .features-wrapper {
       width: 1200px; }
     .features-list {
       width: 1200px; }
+  .features-list__item {
+    padding: 0 55px; }
+    .features-list__item::before {
+      left: 40%; }
+  .features-list__item h3 {
+    padding-left: 70px;
+    padding-right: 70px; }
   .main-menu {
     width: 320px;
     margin: 0 auto; }
     .map {
       width: 1200px; }
+  .map {
+    background: url("../img/map-desktop.jpg") no-repeat center; }
+  .map iframe {
+    width: 1200px;
+    height: 350px; }
     .search-hotel {
       width: 1200px; }
     .welcome-screen {

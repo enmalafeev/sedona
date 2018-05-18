@@ -175,5 +175,22 @@
 
  }
 
+ @media #{$desktop-width} {
+    .features-list__item {
+      padding: 0 55px;
+
+      &::before {
+        left: 40%;
+      }
+    }
+
+    .features-list__item h3 {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+
+ }
+
 
 

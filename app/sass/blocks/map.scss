@@ -19,15 +19,13 @@
   }
 }
 
-// .map::before {
-//   position: absolute;
-//   content: "";
+@media #{$desktop-width} {
+  .map {
+    background: url("../img/map-desktop.jpg") no-repeat center;
+  }
 
-//   width: 27px;
-//   height: 27px;
-
-//   top: 45%;
-//   left: 46%;
-
-//   background: url("../img/map-marker.png") no-repeat center;
-// }
+  .map iframe {
+    width: 1200px;
+    height: 350px;
+  }
+}
