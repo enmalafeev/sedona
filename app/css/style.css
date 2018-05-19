@@ -172,6 +172,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: auto;
   overflow-x: hidden; }
 
 *,
